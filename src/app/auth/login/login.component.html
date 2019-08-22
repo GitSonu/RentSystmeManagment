@@ -1,0 +1,42 @@
+<div class="innerMain logPage">
+  <div class="loginPage">
+    <div class="header">
+      <img src="assets/img/logo.png" alt="logo">
+      <h3>Tenante  Management System</h3>
+    </div>
+    <div class="loginInr">
+      <div class="loginHeader">
+        <h2>Login</h2>
+        <div style="color:red;" *ngIf="show">Invalid username or password </div>
+      </div>
+      <div class="loginCon">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <ul>
+            <li>
+              <label>
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+              </label>
+              <input class="inpt-box" type="text" placeholder="User Name" name="username" formControlName="username">
+              <div *ngIf="submitted && f.username.errors" class="errorClass">
+                <div *ngIf="f.username.errors.required"> Username is required</div>
+              </div>
+            </li>
+            <li>
+              <label>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </label>
+              <input class="inpt-box" type="password" placeholder="Password" name="password" formControlName="password">
+              <div *ngIf="submitted && f.password.errors" class="errorClass">
+                <div *ngIf="f.password.errors.required">Password is required</div>
+                <div *ngIf="f.password.errors.minlength">Password must be 6 characters</div>
+              </div>
+            </li>
+            <li class="loBtn">
+              <button type="submit" class="btn-main" [disabled]="loginForm.invalid && submitted">Login</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

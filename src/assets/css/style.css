@@ -1,0 +1,620 @@
+.homePage {
+background-repeat: repeat;
+background-size: cover;
+position: relative;
+width: 100%;
+min-height: 100vh;
+height: auto;
+background: url(../img/background.jpg);
+}
+.homePage:before {
+position: absolute;
+content: "";
+background-image: linear-gradient(
+    to bottom right,
+    rgba(9, 23, 60, 0.8),
+    rgba(22, 89, 115, 0.8)
+);
+width: 100%;
+height: 100%;
+}
+.header {
+text-align: center;
+color: #fff;
+}
+.header h3 {
+margin: 10px 0 20px;
+font-size: 26px;
+font-weight: 300;
+}
+.header img {
+width: 250px;
+}
+/* =====login page css start===== */
+.loginInr {
+margin: 0 auto;
+background: rgba(19, 30, 47, 0.64);
+color: #fff;
+border-radius: 30px;
+box-shadow: 0px 5px 16px 3px rgba(18, 153, 167, 0.3);
+}
+.loginPage {
+margin: 0 auto;
+}
+.inner .innerMain {
+padding: 20px 0;
+}
+.innerMain {
+position: relative;
+margin: 0 auto;
+z-index: 999;
+max-width: 1000px;
+width: 100%;
+}
+.logPage {
+max-width: 450px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.loginHeader h2 {
+margin: 0;
+letter-spacing: 0.5px;
+}
+.loginCon {
+padding: 50px 0px;
+width: 60%;
+margin: 0 auto;
+}
+.loginCon li {
+height: 40px;
+line-height: 40px;
+display: block;
+padding-bottom: 20px;
+border-bottom: 2px solid rgba(18, 153, 167, 0.62);
+margin-bottom: 20px;
+}
+.loginCon li:last-child {
+border: none;
+text-align: center;
+margin-top: 50px;
+}
+.loginCon .inpt-box {
+background: transparent;
+border: none;   
+color: #fff;
+font-size: 16px;
+}
+.btn-main{
+background: #1299a7;
+border: none;
+color: #fff;
+font-size: 16px;
+width: 100%;
+max-width: 200px;
+height: 50px;
+border-radius: 10px;
+letter-spacing: 0.5px;
+cursor: pointer;
+}
+button.btn-main:hover {
+background: #11abbb;
+}
+.loginHeader {
+background: #1299a7;
+padding: 20px 0px;
+text-align: center;
+border-radius: 30px 30px 0px 0px;
+}
+.loginCon label {
+padding-right: 10px;
+}
+/* =====employee css===== */
+.logBtn {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: #fff;
+  padding: 5px 20px;
+  border: 1px solid #1299a7;
+  border-radius: 20px;
+}
+.logBtn a {
+  color: #1299a7;
+  font-size: 14px;
+  font-weight: 600;
+}
+.logBtn i {
+  padding-right: 6px;
+}
+.logBtn a:hover {
+  color: #f00018;
+}
+.table-fixed {
+width: 100%;
+}
+.table-fixed tbody {
+max-height: 222px;
+height: 100%;
+overflow-y: auto;
+width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr {
+display: inline-block;
+width: 100%;
+}
+.table-fixed td, .table-fixed th {
+display: inline-block;
+width: 25%;
+}
+.one td, .one th {
+display: inline-block;
+width: 16.66%;
+}
+.table-fixed tbody td {
+float: left;
+}
+.table-fixed thead tr th {
+float: left;
+}
+.tbl-responsive {
+min-width: 600px;
+}
+.res-one {
+min-width: 700px;
+}
+.table-div {
+overflow-x: auto;
+}
+.empTable .table th, .empTable .table  {
+color: #f3f3f3;
+font-weight: 500;
+font-size: 14px;
+vertical-align: top;
+}
+.table tr {
+border-bottom: 1px solid rgba(148, 148, 148, 0.35);
+border-top: 0;
+}
+.table tr:last-child {
+border-bottom: none;
+}
+.table thead th{
+border-bottom: 0;
+}
+.table td, .table th{
+border: 0;
+padding: 10px 0;
+}
+.table thead tr{
+padding-right: 18px;
+}
+th:first-child, td:first-child, th:last-child, td:last-child {
+padding-left: 5px;
+}
+.fix-two tbody {
+height: auto;
+}
+.emplPage-content {
+  display: inline-block;
+  width: 100%;
+}
+.empDtls {
+padding: 40px;
+background: rgba(19, 30, 47, 0.64);
+height: auto;
+display: inline-block;
+width: 100%;
+margin-top: 40px;
+}
+.crLink{
+  float: left;
+  width: 50%;
+}
+.detlsLink {
+  text-align: right;
+}
+.clear-both {
+  width: 100%;
+  display: inline-block;
+}
+.empDtls a, .detlsLink a, .timeDelLink  {
+color: #1696a3 !important;
+font-weight: 400;
+}
+.empDtls a:hover, .detlsLink a:hover, .timeDelLink:hover {
+color: #f00018 !important;
+}
+.empTable {
+margin-top: 20px;
+border: 1px solid rgba(148, 148, 148, 0.35);
+}
+.nav.nav-pills {
+background: #1299a7;
+}
+.nav-tabs {
+background: #1299a7;
+line-height: 50px;
+height: 50px;
+}
+.navItem {
+display: inline-block;
+}
+.navItem a {
+color: #fff !important;
+font-weight: 700;
+letter-spacing: 0.6px;
+padding: 15px ;
+display: inline-block;
+}
+.navItem .active {
+background: #23354a;
+color: #ffffff !important;
+border: 2px solid #fff;
+border-bottom: none;
+}
+.nav-tabs .nav-link.active {
+color: #495057;
+background-color: #fff;
+border: none;
+border-radius: 0;
+}
+.nav-item a {
+color: #fff;
+line-height: 33px;
+}
+.nav-link:hover {
+border:none; 
+  background-color: #fff;
+  color: #000;
+  transition: 300ms all;
+  border-radius: 0;
+}
+.table tr:nth-child(even) {
+background-color: rgba(0,0,0,.05);
+}
+.empTable .table {
+margin-bottom: 0;
+}
+.empTable .table td {
+font-weight: 300;
+font-size: 13px;
+letter-spacing: 0.5px;
+}
+.table thead {
+background: #1299a7;
+}
+.empTable  .table th {
+border-top: 0; 
+}
+/* ====Edit Employee css=== */
+.editFrm-left {
+float: left;
+width: 47%;
+margin-right: 21px;
+}
+.last{
+margin-right: 0;
+}
+.emplEdit {
+padding-top: 50px;
+padding: 40px;
+background: rgba(19, 30, 47, 0.64);
+height: auto;
+display: inline-block;
+width: 100%;
+margin-top: 40px;
+}
+.edtHeeading h3 {
+color: #fff;
+text-align: center;
+font-size: 26px;
+font-weight: 300;
+}
+.editFrm form {
+color: #fff;
+}
+.int label {
+max-width: 140px;
+width: 100%;
+font-size: 13px;
+font-weight: 300;
+letter-spacing: 0.5px;
+vertical-align: top;
+}
+.int .chek-label {
+display: inline;
+}
+.editFrm p {
+color: #fff;
+}
+.editFrm .input  {
+max-width: 180px;
+border: 1px solid rgba(51, 100, 119, 0.45);
+color: #fff;
+font-size: 13px;
+font-weight: 300;
+line-height: 33px;
+outline: none;
+width: 100%;
+background: rgba(51, 100, 119, 0.45);
+border-radius: 5px;
+padding: 0 10px;
+}
+.editFrm .fix-two .input {
+  max-width: 80%;
+  padding-left: 6px;
+  padding-right: 0;
+}
+.editFrm select.input {
+line-height: 33px;
+height: 33px;
+}
+input.chek {
+margin-right: 5px;
+}
+.editFrm .detlsLink {
+padding-top: 10px;
+}
+.editFrm .int{
+padding-bottom: 15px;
+}
+.subtn {
+text-align: center;
+}
+.editFrm option {
+color: #000;
+}
+
+/* =====new user css==== */
+textarea {
+color: #fff;
+border: 1px solid rgba(51, 100, 119, 0.45);
+background: rgba(51, 100, 119, 0.45);
+border-radius: 5px;
+vertical-align: middle;
+}
+textarea.del-text {
+  width: 80%;
+  resize: none;
+  height: auto;
+}
+.btn-main.reset {
+background: #f00018;
+}
+.btn-main.reset:hover {
+background: #c91527;
+}
+.subtn li {
+display: inline;
+padding: 15px;
+}
+.editFrm .input.all-em-int {
+  max-width: 34%;
+  padding: 0;
+}
+.all-em-int .multiselect-dropdown .dropdown-btn {
+  border: none !important;
+}
+.all-em-int .multiselect-dropdown .dropdown-btn .dropdown-up {
+  border-bottom: 7px solid #ffffff !important;
+  border-left: 7px solid transparent !important;
+  border-right: 7px solid transparent !important;
+}
+.all-em-int .multiselect-dropdown .dropdown-btn .dropdown-down {
+  border-top: 7px solid #ffffff !important;
+  border-left: 7px solid transparent !important;
+  border-right: 7px solid transparent !important;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+ul.item2 {
+  max-height: 170px !important;
+}
+.int-half {
+  width: 100%;
+  display: table;
+}
+/*=====edit project details css=====*/
+.checkLeft {
+display: inline-block;
+}
+.half {
+width: 50%;
+float: left;
+}
+.rgt label {
+max-width: 100px;
+}
+.input.big {
+max-width: 320px;
+}
+.proEdCont .edtHeeading h3 {
+padding-bottom: 40px;
+}
+/* ====timesheet css===== */
+.emp-time  {
+padding: 40px;
+background: rgba(19, 30, 47, 0.64);
+height: auto;
+display: inline-block;
+width: 100%;
+margin-top: 40px;
+}
+.save-link {
+float: right;
+width: 50%;
+text-align: right;
+}
+.save-link label {
+  color: #fff;
+  font-size: 15px;
+  padding-right: 20px;
+}
+.save-link .input {
+  max-width: 100px;
+  border: 1px solid rgba(51, 100, 119, 0.45);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 33px;
+  outline: none;
+  width: 100%;
+  background: rgba(51, 100, 119, 0.45);
+  border-radius: 5px;
+  padding: 0px 7px;
+}
+.emplEdCont .btn-main {
+margin-bottom: 20px;
+}
+.emplEdCont .editFrm {
+display: inline-block;
+width: 100%;
+margin: 0 auto;
+padding-top: 20px;
+}
+.editFrm-cTop {
+  display: inline-block;
+  width: 100%;
+}
+.editFrm-cBottom .edtHeeading {
+  padding: 40px 0px 0px;
+  display: inline-block;
+  width: 100%;
+}
+.fix-two .wid-15{
+width: 15%;
+}
+.fix-two th, .fix-two td{
+width: 7.5%;
+}
+.fix-two td {
+padding: 10px 10px 10px 0px;
+}
+.fix-two td:last-child {
+  padding-left: 8px;
+} 
+.fix-two thead tr{
+padding-right: 0;
+}
+.fix-two td:first-child {
+padding-left: 5px;
+}
+.input {
+width: 100%;
+display: inline-block;
+}
+.entrtimesheet .edtHeeading {
+padding: 40px 0px 0px;
+display: inline-block;
+width: 100%;
+}
+#timesheet .table .input {
+max-width: 50px;
+border: 1px solid rgba(51, 100, 119, 0.45);
+color: #fff;
+font-size: 14px;
+font-weight: 300;
+line-height: 28px;
+outline: none;
+width: 100%;
+background: rgba(51, 100, 119, 0.45);
+border-radius: 5px;
+}
+td.wid-80{
+width: 80%;
+}
+td.wid-20{
+width: 20%;
+}
+.fix-three th, .fix-three td{
+width: 20%;
+}
+.btn-main.sub {
+background: #03636d;
+}
+::-webkit-inner-spin-button { 
+height: 35px;
+}
+::-webkit-calendar-picker-indicator { background-color:white}
+input[type=date]{
+font-size:30px;
+}
+::-webkit-datetime-edit-text { color:#fff;}
+::-webkit-datetime-edit-month-field { color:#fff;}
+::-webkit-datetime-edit-day-field { color: #fff; }
+::-webkit-datetime-edit-year-field { color:#fff; }
+::-webkit-calendar-picker-indicator{ 
+background-image: url(http://icons.iconarchive.com/icons/custom-icon-design/mono-business-2/64/calendar-icon.png);
+    background-position:center;
+      background-size:25px 25px;
+      background: #1299a7;
+      background-repeat:no-repeat;
+    color:#fff;
+}
+.select-selected {
+background-color: #1299a7;
+}
+
+/* == delete popup css start == */
+.modal-content {
+  background: #142535;
+  color: #fff;
+  width: 400px;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+}
+.modal-header, .modal-footer {
+  border: none;
+  justify-content: center;
+}
+.modal-header .close {
+  color: #cc0014;
+  opacity: 1;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-shadow: 0 1px 0 #0f828e;
+  padding: 15px 20px 0 0;
+}
+.modal-header .close:hover {
+  color: #0f828e;
+}
+.modal-header h2 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.modal-body {
+  text-align: center;
+  padding: 10px 0;
+}
+.modal-body p {
+color: #fff;
+margin-bottom: 0;
+}
+.modal-footer button {
+  background: #1299a7;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  max-width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.modal-footer button:hover {
+  background: #11abbb;
+}
+/*--edit-timesheet-page css--*/
+.mt-20 {
+  margin-top: 20px;
+}
+.clear-both {
+  width: 100%;
+  display: inline-block;
+}

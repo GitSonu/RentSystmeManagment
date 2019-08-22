@@ -1,0 +1,28 @@
+$("#createNew").click(function(){
+    $("#create").show(); 
+    $("#edit").hide(); 
+    $("#employeeDtls").hide();  
+});
+$("#empDtls").click(function(){
+    $("#employeeDtls").show(); 
+    $("#create").hide(); 
+    $("#edit").hide();  
+});
+$("#emplDtls").click(function(){
+    $("#employeeDtls").show(); 
+    $("#create").hide(); 
+    $("#edit").hide();  
+});
+$("#edtDtls").click(function(){
+    $("#edit").show(); 
+    $("#create").hide();
+    $("#employeeDtls").hide();   
+});
+$("#edtPro").click(function(){
+    $("#proEdit").show(); 
+    $("#projectDetls").hide();   
+});
+$("#createProNew").click(function(){
+    $("#proCre").show(); 
+    $("#projectDetls").hide();   
+});

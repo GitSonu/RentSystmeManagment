@@ -1,0 +1,146 @@
+
+@media screen and (min-width: 1024px) {
+}
+
+@media (max-width: 991px) {
+.header h3 {
+font-size: 24px;
+}
+.empDtls {
+margin-top: 15px;
+}
+.navItem a {
+padding: 15px 9px;
+font-size: 14px;
+}
+.int label {
+max-width: 100%;
+font-size: 12px;
+}
+.editFrm-left {
+margin-right: 15px;
+width: 46%;
+}
+.editFrm .input, .editFrm .input.all-em-int {
+max-width: 250px;
+}
+textarea {
+width: 100%;
+max-width: 250px;
+}
+.employee.innerMain {
+padding: 20px;
+}
+.emplEdCont.emp-time {
+margin-top: 15px;
+padding: 40px 16px;
+}
+}
+@media (max-width: 767px) {
+.logBtn a {
+font-size: 11px;
+}
+.logBtn {
+top: 0;
+padding: 2px 10px;
+display: inline-flex;
+}
+.editFrm .fix-two .input {
+    max-width: 100%;
+}
+.editFrm-cTop .half {
+    float: none;
+    max-width: 300px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 640px) {
+    .employee .subtn {
+        text-align: left;
+    }
+.innerMain.logPage {
+padding: 0 15px;
+}
+.innerMain {
+padding: 57px 20px;
+}
+.loginHeader h2 {
+font-size: 25px;
+}
+.header img {
+width: 220px;
+}
+.loginCon {
+padding: 30px 0px;
+}
+.loginCon .inpt-box {
+max-width: 140px;
+font-size: 14px;
+}
+.navItem a {
+border: 2px solid #1299a7;
+border-bottom: none;
+display: block;
+}
+.navItem {
+display: block;
+width: 100%;
+text-align: left;
+}
+.editFrm-left {
+width: 100%;
+margin-right: 0;
+}
+.int-half .half {
+    width: 100%;
+}
+.edtHeeading h3 {
+text-align: left;
+font-size: 20px;
+}
+.crLink, .detlsLink {
+padding-bottom: 0px;
+padding-top: 0px;
+}
+.employee .subtn {
+text-align: left;
+}
+textarea {
+max-width: 250px;
+width: 100%;
+}
+.btn-main.reset {
+padding: 0px 22px;
+}
+.btn-main {
+padding: 0px 18px;
+}
+.subtn li {
+display: block;
+margin: 0px 10px;
+padding: 0;
+}
+.header h3 {
+font-size: 17px;
+margin: 10px 0 20px;
+}
+.empDtls {
+padding: 18px;
+}
+#timesheet .empTable {
+margin-top: 0;
+}
+.emplEdit {
+padding: 30px 20px;
+}
+.modal-content {
+    min-width: 272px;
+    width: 100%
+}
+.modal-body {
+    padding: 0;
+}
+}
+
