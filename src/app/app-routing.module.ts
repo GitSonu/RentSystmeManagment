@@ -4,9 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path : '', redirectTo : 'auth', pathMatch : 'full'},
   { path: 'auth', loadChildren: './auth/auth.module#AuthModule' },
-  
-
+  { path: 'tenants', loadChildren: './tenants/tenants.module#TenantsModule' }
 ]; 
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

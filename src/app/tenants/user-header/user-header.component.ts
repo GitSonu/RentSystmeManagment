@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class UserHeaderComponent implements OnInit {
 
   
-  isActive: string = '/tenants/userform';
+  isActive : string = '/tenants/userDetails';
   constructor(private router: Router) { }
 
   ngOnInit() {
