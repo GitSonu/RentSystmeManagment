@@ -5,6 +5,7 @@ import { UserReportComponent } from './user-report/user-report.component';
 import { UserdetailComponent } from './userdetail/userdetail.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
 import { TenantsComponent } from './tenants.component';
+import { UserCreateComponent } from './user-create/user-create.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
     path: "",
     component: TenantsComponent,
     children: [
+      {
+        path: "createUser",
+        component: UserCreateComponent,
+      },
       {
         path: "userDetails",
         component: UserdetailComponent,

@@ -7,9 +7,10 @@ import { UserEditComponent } from './user-edit/user-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TenantsRoutingModule } from './tenants-routing-modul';
 import { TenantsComponent } from './tenants.component';
+import { UserCreateComponent } from './user-create/user-create.component';
 
 @NgModule({
-  declarations: [UserdetailComponent, UserHeaderComponent, UserReportComponent, TenantsComponent, UserEditComponent],
+  declarations: [UserdetailComponent, UserHeaderComponent, UserReportComponent, TenantsComponent, UserEditComponent, UserCreateComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

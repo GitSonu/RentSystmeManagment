@@ -38,9 +38,9 @@ export class LoginComponent implements OnInit {
         userName: this.f.username.value,
         password: this.f.password.value
       }
-   //  this.router.navigate(['tenants/userDetails']);
+     this.router.navigate(['tenants/createUser']);
 
-      this.router.navigate(['/tenants']);
+    //  this.router.navigate(['/tenants']);
     }
   }
 

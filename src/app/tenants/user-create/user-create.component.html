@@ -1,0 +1,131 @@
+<div class="emplEdit" id="proCre">
+    <div class="proEdCont">
+      <div class="edtHeeading">
+        <h3>Create new User</h3>
+      </div>
+      <div class="detlsLink">
+        <!-- <a href="" id="empDtls" routerLink="/admin/projectDetails">Project Details</a> -->
+      </div>
+      <div class="editFrm">
+        <form [formGroup]="addUserForm" (ngSubmit)="addUser()">
+          <p style="color:#f00018;" *ngIf="show"> Note: All Field are mandatory and project has to be Assiengened to
+            atleast one Employee</p>
+          <div class="editFrm-full">
+            
+            <div class="int-half">
+              <div class="int half">
+                <label>First Name*</label>
+                <input class="input" type="text" value="" formControlName="firstName" (ngModel)="this.addUserForm.value.firstName">
+                <div *ngIf="addUserForm.controls['firstName'].touched && !addUserForm.controls['firstName'].valid">
+                  <span *ngIf="addUserForm.controls['firstName'].hasError('required') " style="color:#f00018;">
+                      First Name is required
+                  </span>
+                </div>
+              </div>
+              <div class="int half rgt">
+                <label>Last Name*</label>
+                <input class="input" type="text" value="" formControlName="lastName" (ngModel)="this.addUserForm.value.lastName">
+                <div class="required-text" *ngIf="addUserForm.controls['lastName'].touched && !addUserForm.controls['lastName'].valid">
+                  <span *ngIf="addUserForm.controls['lastName'].hasError('required') " style="color:#f00018;">
+                      Last Name is required
+                  </span>
+                </div>
+              </div>
+  
+  
+  
+  
+              <div class="int half">
+                  <label>Father Name*</label>
+                  <input class="input" type="text" value="" formControlName="fatherName" (ngModel)="this.addUserForm.value.fatherName">
+                  <div *ngIf="addUserForm.controls['fatherName'].touched && !addUserForm.controls['fatherName'].valid">
+                    <span *ngIf="addUserForm.controls['fatherName'].hasError('required') " style="color:#f00018;">
+                        Father Name is required
+                    </span>
+                  </div>
+                </div>
+                <div class="int half rgt">
+                  <label>Cast*</label>
+                  <input class="input" type="text" value="" formControlName="cast" (ngModel)="this.addUserForm.value.cast">
+                  <div class="required-text" *ngIf="addUserForm.controls['cast'].touched && !addUserForm.controls['cast'].valid">
+                    <span *ngIf="addUserForm.controls['cast'].hasError('required') " style="color:#f00018;">
+                        Cast is required
+                    </span>
+                  </div>
+                </div>
+  
+                
+                
+              <div class="int half">
+                  <label>Old Address*</label>
+                  <input class="input" type="text" value="" formControlName="oldAddress" (ngModel)="this.addUserForm.value.oldAddress">
+                  <div *ngIf="addUserForm.controls['oldAddress'].touched && !addUserForm.controls['oldAddress'].valid">
+                    <span *ngIf="addUserForm.controls['oldAddress'].hasError('required') " style="color:#f00018;">
+                        Old Address is required
+                    </span>
+                  </div>
+                </div>
+                <div class="int half rgt">
+                  <label>Local Relative Address*</label>
+                  <input class="input" type="text" value="" formControlName="localAddress" (ngModel)="this.addUserForm.value.localAddress">
+                  <div class="required-text" *ngIf="addUserForm.controls['localAddress'].touched && !addUserForm.controls['localAddress'].valid">
+                    <span *ngIf="addUserForm.controls['localAddress'].hasError('required') " style="color:#f00018;">
+                        Local Relative Address is required
+                    </span>
+                  </div>
+                </div>
+  
+                
+                
+              <div class="int half">
+                  <label>Married Status*</label>
+                  <input class="input" type="text" value="" formControlName="married" (ngModel)="this.addUserForm.value.married">
+                  <div *ngIf="addUserForm.controls['married'].touched && !addUserForm.controls['married'].valid">
+                    <span *ngIf="addUserForm.controls['married'].hasError('required') " style="color:#f00018;">
+                        Married Status is required
+                    </span>
+                  </div>
+                </div>
+                <div class="int half rgt">
+                  <label>Voter ID*</label>
+                  <input class="input" type="text" value="" formControlName="voterId" (ngModel)="this.addUserForm.value.voterId">
+                  <div class="required-text" *ngIf="addUserForm.controls['voterId'].touched && !addUserForm.controls['voterId'].valid">
+                    <span *ngIf="addUserForm.controls['voterId'].hasError('required') " style="color:#f00018;">
+                        Voter ID is required
+                    </span>
+                  </div>
+                </div>
+  
+                
+                
+              <div class="int half">
+                  <label>Gadi Number*</label>
+                  <input class="input" type="text" value="" formControlName="gadiNumber" (ngModel)="this.addUserForm.value.gadiNumber">
+                  <div *ngIf="addUserForm.controls['gadiNumber'].touched && !addUserForm.controls['gadiNumber'].valid">
+                    <span *ngIf="addUserForm.controls['gadiNumber'].hasError('required') " style="color:#f00018;">
+                        Gadi Number is required
+                    </span>
+                  </div>
+                </div>
+                <div class="int half rgt">
+                  <label>Member Counting*</label>
+                  <input class="input" type="text" value="" formControlName="memberCount" (ngModel)="this.addUserForm.value.memberCount">
+                  <div class="required-text" *ngIf="addUserForm.controls['memberCount'].touched && !addUserForm.controls['memberCount'].valid">
+                    <span *ngIf="addUserForm.controls['memberCount'].hasError('required') " style="color:#f00018;">
+                        Member Counting is required
+                    </span>
+                  </div>
+                </div>
+  
+            </div>
+          
+  
+           
+          </div>
+          <div class="subtn">
+            <button type="submit" class="btn-main">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
